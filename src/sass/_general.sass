@@ -42,6 +42,8 @@ nav
         display: block
         max-height: 100%
         margin-top: 13px
+        img
+            width: 90px
     &_descr
         margin-top: 6px
         font-weight: 100
@@ -240,17 +242,20 @@ nav
             border-radius: 100%
             cursor: pointer
             &:before
-                contant: ''
+                content: ''
                 display: block
                 width: 14px
                 height: 2px
                 background-color: $main_color
             &:after
-                contant: ''
+                content: ''
                 display: block
                 width: 2px
                 height: 14px
                 background-color: $main_color
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
 
 .uber
     max-height: 899px
@@ -411,6 +416,14 @@ nav
             text-decoration: none
             &:hover
                 color: #00697e
+    &_mobile
+        display: flex
+        justify-content: end
+        a
+            text-decoration: none
+            img
+                margin-right: 3px
+                height: 40px
 .xs-visible
     display: none
         
